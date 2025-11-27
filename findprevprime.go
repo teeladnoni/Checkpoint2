@@ -5,7 +5,7 @@ func CheckPrime(nb int) bool {
 		return true
 	}
 
-	for i:=2; i*i <= nb; i++ {
+	for i := 2; i*i <= nb; i++ {
 		if nb%i == 0 {
 			return false
 		}
@@ -27,8 +27,7 @@ func FindPrevPrime(nb int) int {
 	return 0
 }
 
-
 func main() {
 	print(FindPrevPrime(3))
-	
+
 }

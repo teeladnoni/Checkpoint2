@@ -8,7 +8,7 @@ func HashCode(dec string) string {
 	lent := len(dec)
 	var result string
 
-	for _, f := range  dec {
+	for _, f := range dec {
 		cal := (int(f) + lent) % 127
 		if cal < 33 {
 			cal += 33
